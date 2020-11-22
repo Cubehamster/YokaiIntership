@@ -11,14 +11,14 @@
 		//stencil operation
 		ZTest LEqual
 
-		//Stencil{
-		//	Ref[_StencilRef]
-		//	Comp Always
-		//	Pass Replace
-		//	//Fail Replace
-		//	//ZFail Replace
-		//}
-		//
+		Stencil{
+			Ref[_StencilRef]
+			Comp Always
+			Pass Replace
+			//Fail Replace
+			//ZFail Replace
+		}
+		
 		Pass{
 		//don't draw color or depth
 

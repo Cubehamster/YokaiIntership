@@ -450,7 +450,7 @@ public class BETA_SETTINGS{
             targetAngles.x = Mathf.Clamp(targetAngles.x, -0.5f * rotationRange, 0.5f * rotationRange);
             followAngles = Vector3.SmoothDamp(followAngles, targetAngles, ref followVelocity, cameraSmoothing/100);
 
-            Vector3 lookAngle = originalRotation * followAngles;
+            //Vector3 lookAngle = originalRotation * followAngles;
             
             transform.localRotation = originalRotation * Quaternion.Euler(new Vector3(0, followAngles.y, followAngles.z));
             playerCamera.localRotation = Quaternion.Euler(new Vector3(-followAngles.x, 0, 0));
